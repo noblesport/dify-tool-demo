@@ -1,0 +1,64 @@
+identity:
+  name: dify-tool-demo
+  author: noblesport
+  label:
+    en_US: dify-tool-demo
+    zh_Hans: dify-tool-demo
+    pt_BR: dify-tool-demo
+description:
+  human:
+    en_US: dify tool demo
+    zh_Hans: dify tool demo
+    pt_BR: dify tool demo
+  llm: dify tool demo
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: dify tool demo
+      zh_Hans: dify tool demo
+      pt_BR: dify tool demo
+    llm_description: dify tool demo
+    form: llm
+  - name: query-select
+    type: select
+    required: true
+    label:
+      en_US: Query select
+      zh_Hans: 下拉选
+    human_description:
+      en_US: dify tool demo
+      zh_Hans: dify tool demo
+    llm_description: dify tool demo
+    form: form
+    default: test2
+    options:
+        - label:
+            en_US: test1
+            zh_Hans: 测试1
+          value: test1
+        - label:
+            en_US: test2
+            zh_Hans: 测试2
+          value: test2
+  - name: chat-model
+    type: model-selector
+    required: true
+    scope: llm
+    label:
+      en_US: Model select
+      zh_Hans: 模型选择
+    human_description:
+      en_US: dify tool demo
+      zh_Hans: dify tool demo
+    llm_description: dify tool demo
+    form: form
+
+extra:
+  python:
+    source: tools/dify-tool-demo.py

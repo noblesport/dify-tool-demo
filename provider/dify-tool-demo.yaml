@@ -1,0 +1,33 @@
+identity:
+  author: noblesport
+  name: dify-tool-demo
+  label:
+    en_US: dify-tool-demo
+    zh_Hans: dify-tool-demo
+    pt_BR: dify-tool-demo
+  description:
+    en_US: dify tool demo
+    zh_Hans: dify tool demo
+    pt_BR: dify tool demo
+  icon: icon.svg
+
+# credentials_for_provider:
+#   demo_api_key:
+#     type: secret-input
+#     required: true
+#     label:
+#       en_US: dify tool demo api key
+#       zh_Hans: api密钥
+#     placeholder:
+#       en_US: en_US
+#       zh_Hans: 中文
+#     help:
+#       en_US: get api form xxx
+#       zh_Hans: 从xxx获取api
+#     url: https://dify.ai
+
+tools:
+  - tools/dify-tool-demo.yaml
+extra:
+  python:
+    source: provider/dify-tool-demo.py
